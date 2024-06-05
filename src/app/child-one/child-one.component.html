@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-lg-6 mx-auto">
+        <div *ngFor="let student of studentarray let i=index"  (click)="updatainfo(student,i)" class="cursor shadow p-2">
+            <p>{{student.name}}</p>
+            <p>{{student.age}}</p>
+            <p>{{student.status}}</p>
+            <p>{{student.address}}</p>
+        </div>
+    </div>
+</div>
